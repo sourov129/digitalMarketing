@@ -21,26 +21,27 @@ const BrandLogo: React.FC<LogoProps> = ({ className = '', size = 'md', variant =
 
   const LogoIcon = () => (
     <div className={`${sizeClasses[size]} ${className} relative group`}>
-      {/* Hexagonal container with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-sapphire-600 via-violet-600 to-sapphire-800 rounded-2xl shadow-velox group-hover:shadow-lift transition-all duration-300">
-        <div className="absolute inset-0 bg-gradient-to-tr from-rosegold-400/20 to-transparent rounded-2xl"></div>
+      {/* Aurora wave container with diamond accent */}
+      <div className="absolute inset-0 bg-gradient-to-br from-midnight-600 via-ethereal-600 to-midnight-800 rounded-3xl shadow-aurora group-hover:shadow-elevation transition-all duration-500">
+        <div className="absolute inset-0 bg-gradient-to-tr from-aurora-400/20 to-transparent rounded-3xl"></div>
         
-        {/* V-shaped logo with arrow elements */}
+        {/* Aurora wave with diamond */}
         <div className="flex items-center justify-center h-full relative">
           <svg 
-            viewBox="0 0 24 24" 
-            className="w-3/5 h-3/5 text-pearl-50"
+            viewBox="0 0 32 32" 
+            className="w-4/5 h-4/5 text-platinum-50"
             fill="currentColor"
           >
-            {/* Main V shape */}
-            <path d="M3 3l6 12 6-12h2l-8 16L1 3h2z" />
-            {/* Arrow accent */}
-            <path d="M18 8l3-3-3-3v2h-4v2h4v2z" className="text-rosegold-400" />
+            {/* Aurora wave */}
+            <path d="M4 16c0-4 2-6 6-8s8 0 12 2c4 2 6 4 6 8s-2 6-6 8c-4 2-8 6-12 2s-6-6-6-10z" className="text-aurora-400" opacity="0.8" />
+            {/* Diamond accent */}
+            <path d="M16 6l4 4-4 4-4-4z" className="text-ethereal-400" />
+            <path d="M16 18l4 4-4 4-4-4z" className="text-aurora-500" />
           </svg>
         </div>
         
-        {/* Glow effect */}
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-violet-400/0 via-violet-400/20 to-violet-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        {/* Shimmer effect */}
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-ethereal-400/0 via-ethereal-400/30 to-ethereal-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       </div>
     </div>
   );
@@ -53,10 +54,10 @@ const BrandLogo: React.FC<LogoProps> = ({ className = '', size = 'md', variant =
     <div className="flex items-center space-x-4">
       <LogoIcon />
       <div className="flex flex-col">
-        <span className={`${textSizeClasses[size]} font-display font-bold bg-gradient-to-r from-sapphire-400 via-violet-500 to-sapphire-600 bg-clip-text text-transparent tracking-tight`}>
-          VeloxStudio
+        <span className={`${textSizeClasses[size]} font-heading font-bold bg-gradient-to-r from-midnight-400 via-ethereal-500 to-midnight-600 bg-clip-text text-transparent tracking-tight`}>
+          AuroraLux
         </span>
-        <span className="text-xs text-rosegold-500 font-medium -mt-1 tracking-widest uppercase">
+        <span className="text-xs text-aurora-500 font-medium -mt-1 tracking-widest uppercase">
           Digital Excellence
         </span>
       </div>

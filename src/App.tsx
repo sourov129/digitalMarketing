@@ -13,7 +13,7 @@ import RefundPolicy from './pages/RefundPolicy';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-charcoal-900 flex flex-col">
+      <div className="min-h-screen bg-obsidian-900 flex flex-col">
         <Header />
         <main className="flex-grow">
           <Routes>
