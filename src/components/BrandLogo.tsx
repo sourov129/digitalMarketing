@@ -21,27 +21,28 @@ const BrandLogo: React.FC<LogoProps> = ({ className = '', size = 'md', variant =
 
   const LogoIcon = () => (
     <div className={`${sizeClasses[size]} ${className} relative group`}>
-      {/* Aurora wave container with diamond accent */}
-      <div className="absolute inset-0 bg-gradient-to-br from-midnight-600 via-ethereal-600 to-midnight-800 rounded-3xl shadow-aurora group-hover:shadow-elevation transition-all duration-500">
-        <div className="absolute inset-0 bg-gradient-to-tr from-aurora-400/20 to-transparent rounded-3xl"></div>
+      {/* Circular container with gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-hover to-accent rounded-full shadow-zenith group-hover:shadow-elevation transition-all duration-500">
+        <div className="absolute inset-0 bg-gradient-to-tr from-secondary/20 to-transparent rounded-full"></div>
         
-        {/* Aurora wave with diamond */}
+        {/* Mountain peak logo */}
         <div className="flex items-center justify-center h-full relative">
           <svg 
             viewBox="0 0 32 32" 
-            className="w-4/5 h-4/5 text-platinum-50"
+            className="w-4/5 h-4/5 text-card"
             fill="currentColor"
           >
-            {/* Aurora wave */}
-            <path d="M4 16c0-4 2-6 6-8s8 0 12 2c4 2 6 4 6 8s-2 6-6 8c-4 2-8 6-12 2s-6-6-6-10z" className="text-aurora-400" opacity="0.8" />
-            {/* Diamond accent */}
-            <path d="M16 6l4 4-4 4-4-4z" className="text-ethereal-400" />
-            <path d="M16 18l4 4-4 4-4-4z" className="text-aurora-500" />
+            {/* Mountain peaks */}
+            <path d="M6 22l6-8 4 3 6-9 4 6v8H6z" className="text-card" opacity="0.9" />
+            {/* Accent peak */}
+            <path d="M16 14l4-6 4 6-4 2-4-2z" className="text-secondary" opacity="0.8" />
+            {/* Base line */}
+            <path d="M4 24h24v2H4z" className="text-accent" />
           </svg>
         </div>
         
-        {/* Shimmer effect */}
-        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-ethereal-400/0 via-ethereal-400/30 to-ethereal-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        {/* Glow effect */}
+        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-accent/0 via-accent/30 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
       </div>
     </div>
   );
@@ -54,11 +55,11 @@ const BrandLogo: React.FC<LogoProps> = ({ className = '', size = 'md', variant =
     <div className="flex items-center space-x-4">
       <LogoIcon />
       <div className="flex flex-col">
-        <span className={`${textSizeClasses[size]} font-heading font-bold bg-gradient-to-r from-midnight-400 via-ethereal-500 to-midnight-600 bg-clip-text text-transparent tracking-tight`}>
-          AuroraLux
+        <span className={`${textSizeClasses[size]} font-heading font-bold bg-gradient-to-r from-primary via-hover to-accent bg-clip-text text-transparent tracking-tight`}>
+          Zenith
         </span>
-        <span className="text-xs text-aurora-500 font-medium -mt-1 tracking-widest uppercase">
-          Digital Excellence
+        <span className="text-xs text-secondary font-medium -mt-1 tracking-widest uppercase">
+          Creative Studio
         </span>
       </div>
     </div>
