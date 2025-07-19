@@ -1,69 +1,69 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, MousePointer, Share2, BarChart3, Mail, Palette, ArrowRight, Crown, Sparkles, Diamond, Zap, Target } from 'lucide-react';
+import { Search, MousePointer, Share2, BarChart3, Mail, Palette, ArrowRight, Crown, Sparkles, Diamond, Zap, Target, CheckCircle } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: Search,
-      title: 'Search Optimization Excellence',
-      description: 'Establish search dominance and capture premium organic traffic through sophisticated optimization strategies.',
+      title: 'Search Optimization Mastery',
+      description: 'Dominate search results and capture premium organic visibility through advanced optimization strategies and technical excellence.',
       features: [
-        'In-Depth SEO Analysis',
+        'Comprehensive SEO Audits',
         'Strategic Keyword Research',
-        'Content & Technical Enhancement',
-        'Premium Link Development',
-        'Local Search Mastery',
-        'Performance Monitoring'
+        'Content & Technical Optimization',
+        'Authority Link Building',
+        'Local Search Dominance',
+        'Performance Analytics'
       ],
-      price: 'Starting at $1,399/month',
+      price: 'Starting at $2,499/month',
     },
     {
       icon: MousePointer,
-      title: 'Advanced Advertising Management',
-      description: 'Amplify ROI with strategically targeted advertising campaigns across premium conversion platforms.',
+      title: 'Precision Advertising Management',
+      description: 'Maximize ROI with strategically targeted campaigns across high-converting platforms and emerging digital channels.',
       features: [
-        'Strategic Campaign Architecture',
-        'Multi-Platform Ad Management',
+        'Strategic Campaign Development',
+        'Multi-Platform Management',
         'Creative Excellence & Design',
-        'Conversion Rate Enhancement',
-        'Smart Bidding Optimization',
-        'Comprehensive Analytics'
+        'Conversion Rate Optimization',
+        'Advanced Bidding Strategies',
+        'Performance Intelligence'
       ],
-      price: 'Starting at $1,699/month',
+      price: 'Starting at $2,999/month',
     },
     {
       icon: Share2,
-      title: 'Social Media Leadership',
-      description: 'Establish commanding brand authority and cultivate engaged communities across all major social platforms.',
+      title: 'Social Media Excellence',
+      description: 'Build commanding brand presence and cultivate engaged communities across all major social platforms.',
       features: [
         'Platform Strategy Development',
-        'Engaging Content Creation',
-        'Community Building & Management',
+        'Premium Content Creation',
+        'Community Management',
         'Social Advertising Excellence',
-        'Influencer Collaboration',
-        'Social Intelligence Analytics'
+        'Influencer Partnerships',
+        'Social Analytics Intelligence'
       ],
-      price: 'Starting at $1,099/month',
+      price: 'Starting at $1,999/month',
     },
     {
       icon: BarChart3,
-      title: 'Analytics & Intelligence Systems',
-      description: 'Convert complex data into strategic insights with advanced analytics and business intelligence platforms.',
+      title: 'Analytics & Intelligence',
+      description: 'Transform complex data into actionable insights with advanced analytics and business intelligence dashboards.',
       features: [
-        'Advanced Analytics Implementation',
-        'Custom Intelligence Dashboards',
-        'Dynamic Performance Reports',
+        'Advanced Analytics Setup',
+        'Custom Dashboard Creation',
+        'Performance Reporting',
         'Strategic Growth Analysis',
         'Predictive Insights',
         'Competitive Intelligence'
       ],
-      price: 'Starting at $799/month',
+      price: 'Starting at $1,499/month',
     },
     {
       icon: Mail,
-      title: 'Email Marketing Mastery',
-      description: 'Develop enduring customer relationships and generate revenue through advanced email marketing systems.',
+      title: 'Email Marketing Excellence',
+      description: 'Nurture lasting customer relationships and drive revenue through sophisticated automation and personalization.',
       features: [
         'Strategic Email Planning',
         'Advanced Segmentation',
@@ -72,7 +72,7 @@ const Services = () => {
         'A/B Testing Excellence',
         'Revenue Attribution'
       ],
-      price: 'Starting at $999/month',
+      price: 'Starting at $1,799/month',
     },
     {
       icon: Palette,
@@ -80,129 +80,142 @@ const Services = () => {
       description: 'Elevate your brand identity with exceptional creative solutions and strategic brand positioning.',
       features: [
         'Brand Strategy Development',
-        'Professional Website Design',
+        'Premium Website Design',
         'Content Strategy & Creation',
         'Creative Design Solutions',
         'Video Content Production',
-        'Strategic Brand Messaging'
+        'Brand Messaging Strategy'
       ],
-      price: 'Starting at $1,299/month',
+      price: 'Starting at $2,299/month',
     },
   ];
 
   const packages = [
     {
-      name: 'Growth',
-      price: '$2,099',
+      name: 'Accelerate',
+      price: '$3,999',
       period: '/month',
-      description: 'Ideal for growing businesses ready to expand their digital reach',
+      description: 'Perfect for growing businesses ready to scale their digital presence',
       features: [
         'Comprehensive SEO Strategy',
         'Google Ads Management',
         'Social Media Excellence (3 platforms)',
-        'Monthly Analytics Reports',
+        'Monthly Performance Reports',
         'Priority Support Access',
+        'Strategic Consultation',
       ],
       popular: false,
     },
     {
-      name: 'Scale',
-      price: '$3,899',
+      name: 'Dominate',
+      price: '$7,499',
       period: '/month',
       description: 'Complete digital ecosystem for businesses seeking market leadership',
       features: [
-        'Everything in Growth Package',
+        'Everything in Accelerate Package',
         'Advanced Content Marketing',
         'Multi-Channel Advertising',
         'Full Social Media Management (5 platforms)',
         'Marketing Automation Systems',
         'Real-Time Analytics Dashboard',
         'Dedicated Account Manager',
+        'Weekly Strategy Sessions',
       ],
       popular: true,
     },
     {
-      name: 'Dominate',
-      price: '$6,499',
+      name: 'Transform',
+      price: '$12,999',
       period: '/month',
-      description: 'Premium marketing solutions for industry leaders',
+      description: 'Premium solutions for industry leaders and enterprise organizations',
       features: [
-        'Everything in Scale Package',
+        'Everything in Dominate Package',
         'Executive Strategy Consultation',
         'Custom Solution Development',
         'AI-Enhanced Analytics',
         'Complete Creative Production',
         'Video Marketing Suite',
         'White-Glove 24/7 Support',
+        'Quarterly Business Reviews',
       ],
       popular: false,
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 py-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-background via-card to-background py-24 relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-cyan-400/20 to-teal-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-teal-400/20 to-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-secondary/10 to-primary/10 rounded-full blur-3xl animate-float delay-1000"></div>
         </div>
         
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgb(34 211 238) 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgb(91 44 111) 1px, transparent 0)`,
             backgroundSize: '50px 50px'
           }}></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
-            <div className="inline-flex items-center bg-gradient-to-r from-cyan-400/20 to-teal-500/20 backdrop-blur-sm border border-cyan-400/30 text-cyan-300 px-8 py-4 rounded-full text-sm font-semibold mb-8 shadow-2xl">
-              <Target className="w-5 h-5 mr-3 text-cyan-400" />
-              Professional Marketing Services
-              <Zap className="w-5 h-5 ml-3 text-cyan-400" />
+            <div className="inline-flex items-center bg-card/60 backdrop-blur-md border border-accent/40 text-accent px-8 py-4 rounded-full text-sm font-semibold mb-8 shadow-soft">
+              <Target className="w-5 h-5 mr-3 text-accent" />
+              Premium Digital Solutions
+              <Zap className="w-5 h-5 ml-3 text-accent" />
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              <span className="block">ADVANCED MARKETING</span>
-              <span className="block bg-gradient-to-r from-cyan-400 to-teal-500 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-heading font-bold text-textPrimary mb-6">
+              <span className="block">EXCEPTIONAL DIGITAL</span>
+              <span className="block bg-gradient-to-r from-primary via-hover to-accent bg-clip-text text-transparent">
                 SERVICES
               </span>
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 to-teal-500 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Professional digital marketing services designed to enhance your brand presence, 
-              expand market reach, and deliver sustainable business growth.
+            <div className="w-32 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-8"></div>
+            <p className="text-xl text-textMuted max-w-3xl mx-auto leading-relaxed">
+              Comprehensive digital marketing services designed to elevate your brand presence, 
+              expand market reach, and deliver sustainable business growth through strategic innovation.
             </p>
           </div>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-textPrimary mb-4">
+              Our Service Excellence
+            </h2>
+            <p className="text-xl text-textMuted max-w-3xl mx-auto">
+              Each service is crafted with precision and delivered with excellence to ensure 
+              your business achieves extraordinary results and market leadership.
+            </p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-gradient-to-br from-slate-800/50 to-gray-900/50 border border-cyan-400/20 rounded-3xl p-8 hover:shadow-2xl hover:border-cyan-400/40 transition-all duration-300 group">
-                <div className="bg-gradient-to-r from-cyan-400 to-teal-500 w-16 h-16 rounded-3xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <service.icon className="h-8 w-8 text-black" />
+              <div key={index} className="bg-card border border-cardBorder rounded-3xl p-8 hover:shadow-zenith transition-all duration-300 group">
+                <div className="bg-gradient-to-r from-primary to-accent w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-md">
+                  <service.icon className="h-8 w-8 text-card" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-4">{service.title}</h3>
-                <p className="text-gray-300 mb-6">{service.description}</p>
-                <ul className="space-y-2 mb-6">
+                <h3 className="text-xl font-heading font-semibold text-textPrimary mb-4">{service.title}</h3>
+                <p className="text-textMuted mb-6 leading-relaxed">{service.description}</p>
+                <ul className="space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="text-sm text-gray-300 flex items-center">
-                      <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></div>
+                    <li key={featureIndex} className="text-sm text-textMuted flex items-center">
+                      <CheckCircle className="w-4 h-4 text-accent mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <div className="text-lg font-semibold text-cyan-400 mb-4">{service.price}</div>
+                <div className="text-lg font-semibold text-primary mb-6">{service.price}</div>
                 <Link
                   to="/contact"
-                  className="w-full bg-gradient-to-r from-cyan-400 to-teal-500 text-black py-3 rounded-2xl font-medium hover:shadow-xl hover:shadow-cyan-500/25 transform hover:-translate-y-1 transition-all duration-300 text-center block"
+                  className="w-full bg-gradient-to-r from-buttonGradientStart to-buttonGradientEnd text-card py-3 rounded-2xl font-medium hover:shadow-zenith transform hover:-translate-y-1 transition-all duration-300 text-center block"
                 >
-                  Request Quote
+                  Get Started
                 </Link>
               </div>
             ))}
@@ -211,53 +224,53 @@ const Services = () => {
       </section>
 
       {/* Package Pricing */}
-      <section className="py-20 bg-gradient-to-br from-slate-800 to-gray-900">
+      <section className="py-20 bg-gradient-to-br from-card to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Strategic Marketing Packages
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-textPrimary mb-4">
+              Strategic Partnership Packages
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Select the ideal package for your business goals. Each includes our commitment to excellence, 
-              detailed performance tracking, and dedicated professional support.
+            <p className="text-xl text-textMuted max-w-3xl mx-auto">
+              Choose the perfect package for your business objectives. Each includes our commitment to excellence, 
+              comprehensive performance tracking, and dedicated professional support.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {packages.map((pkg, index) => (
-              <div key={index} className={`bg-gradient-to-br from-slate-800/50 to-gray-900/50 rounded-3xl p-8 ${pkg.popular ? 'ring-2 ring-cyan-400 relative' : 'border border-cyan-400/20'}`}>
+              <div key={index} className={`bg-card rounded-3xl p-8 transition-all duration-300 ${pkg.popular ? 'ring-2 ring-accent relative shadow-zenith scale-105' : 'border border-cardBorder shadow-soft hover:shadow-zenith'}`}>
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-cyan-400 to-teal-500 text-black px-4 py-1 rounded-full text-sm font-medium flex items-center">
-                      <Diamond className="w-4 h-4 mr-1" />
-                      Best Value
+                    <span className="bg-gradient-to-r from-primary to-accent text-card px-6 py-2 rounded-full text-sm font-semibold flex items-center shadow-md">
+                      <Diamond className="w-4 h-4 mr-2" />
+                      Most Popular
                     </span>
                   </div>
                 )}
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-2">{pkg.name}</h3>
-                  <div className="flex items-baseline justify-center mb-4">
-                    <span className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-teal-500 bg-clip-text text-transparent">{pkg.price}</span>
-                    <span className="text-gray-300 ml-1">{pkg.period}</span>
+                  <h3 className="text-2xl font-heading font-bold text-textPrimary mb-3">{pkg.name}</h3>
+                  <div className="flex items-baseline justify-center mb-6">
+                    <span className="text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{pkg.price}</span>
+                    <span className="text-textMuted ml-1">{pkg.period}</span>
                   </div>
-                  <p className="text-gray-300 mb-8">{pkg.description}</p>
+                  <p className="text-textMuted mb-8 leading-relaxed">{pkg.description}</p>
                 </div>
                 <ul className="space-y-4 mb-8">
                   {pkg.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-gray-300">
-                      <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></div>
+                    <li key={featureIndex} className="flex items-center text-textMuted">
+                      <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
                 <Link
                   to="/contact"
-                  className={`w-full py-3 rounded-2xl font-medium text-center block transition-all ${
+                  className={`w-full py-4 rounded-2xl font-semibold text-center block transition-all duration-300 ${
                     pkg.popular
-                      ? 'bg-gradient-to-r from-cyan-400 to-teal-500 text-black hover:shadow-xl hover:shadow-cyan-500/25 transform hover:-translate-y-1'
-                      : 'border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black'
+                      ? 'bg-gradient-to-r from-buttonGradientStart to-buttonGradientEnd text-card hover:shadow-zenith transform hover:-translate-y-1'
+                      : 'border-2 border-accent text-accent hover:bg-accent hover:text-card'
                   }`}
                 >
-                  Get {pkg.name} Quote
+                  Choose {pkg.name}
                 </Link>
               </div>
             ))}
@@ -265,22 +278,99 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-textPrimary mb-4">Our Strategic Process</h2>
+            <p className="text-xl text-textMuted max-w-3xl mx-auto">
+              A proven methodology that ensures exceptional results and sustainable growth for your business.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: '01',
+                title: 'Discovery & Analysis',
+                description: 'We conduct comprehensive analysis of your business landscape, competitive environment, and growth opportunities.',
+              },
+              {
+                step: '02',
+                title: 'Strategy Development',
+                description: 'Create tailored digital marketing strategies aligned with your vision and business objectives.',
+              },
+              {
+                step: '03',
+                title: 'Implementation',
+                description: 'Execute strategies with precision, utilizing cutting-edge technologies and proven methodologies.',
+              },
+              {
+                step: '04',
+                title: 'Optimization',
+                description: 'Monitor, analyze, and optimize campaigns for maximum performance and exceptional ROI.',
+              },
+            ].map((step, index) => (
+              <div key={index} className="text-center group">
+                <div className="bg-gradient-to-r from-primary to-accent text-card w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-zenith">
+                  {step.step}
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-textPrimary mb-4">{step.title}</h3>
+                <p className="text-textMuted leading-relaxed">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industries Section */}
+      <section className="py-20 bg-gradient-to-br from-card to-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-textPrimary mb-4">Industries We Serve</h2>
+            <p className="text-xl text-textMuted max-w-3xl mx-auto">
+              Specialized expertise across diverse business sectors with proven success records.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+            {[
+              { name: 'E-commerce', icon: '🛒' },
+              { name: 'Healthcare', icon: '🏥' },
+              { name: 'Technology', icon: '💻' },
+              { name: 'Real Estate', icon: '🏠' },
+              { name: 'Finance', icon: '💰' },
+              { name: 'Education', icon: '🎓' },
+              { name: 'Hospitality', icon: '🏨' },
+              { name: 'Manufacturing', icon: '🏭' },
+            ].map((industry, index) => (
+              <div key={index} className="text-center p-6 bg-card rounded-3xl hover:bg-accent/5 transition-all duration-300 shadow-soft hover:shadow-zenith hover:-translate-y-1 border border-cardBorder group">
+                <div className="text-3xl mb-3 group-hover:scale-110 transition-transform">{industry.icon}</div>
+                <div className="text-sm font-medium text-textMuted">{industry.name}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-cyan-400 via-teal-500 to-cyan-600 text-black relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-primary via-hover to-accent text-card relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="bg-card/20 backdrop-blur-md w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8">
+            <Crown className="h-10 w-10 text-card" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
             Ready to Accelerate Your Growth?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let's create a tailored marketing strategy that drives growth and delivers exceptional results.
+          <p className="text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+            Let's create a customized marketing strategy that drives exceptional growth and 
+            establishes your market leadership through innovative digital solutions.
           </p>
           <Link
             to="/contact"
-            className="bg-black text-cyan-400 px-10 py-5 rounded-2xl font-bold hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 inline-flex items-center text-lg"
+            className="bg-card text-primary px-12 py-6 rounded-full font-bold hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 inline-flex items-center text-lg"
           >
-            Start Your Growth Journey
-            <ArrowRight className="ml-2 h-5 w-5" />
+            Start Your Transformation
+            <ArrowRight className="ml-3 h-6 w-6" />
           </Link>
         </div>
       </section>
